@@ -39,9 +39,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void buildList() {
         //Integer.parseInt(mETOption.getText().toString());
-        if(mETOption.getText().toString().equals("1")){
+        if(mETOption.getText().toString().equals("0")){
             modelArrayList.add(new SenderModel(mEtSendMessage.getText().toString()));
-        }else if(mETOption.getText().toString().equals("0")){
+        }else if(mETOption.getText().toString().equals("1")){
             modelArrayList.add(new ReceiverModel(mEtSendMessage.getText().toString()));
         }
         chatAdapter.notifyDataSetChanged();
